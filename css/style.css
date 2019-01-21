@@ -1,0 +1,281 @@
+
+/**********************************************
+SAVE THIS FILE AS A TEMPLATE
+***********************************************/
+
+html {
+  font-family: sans-serif;
+  font-size: 62.5%;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+    font-size: 14px;
+    margin: 0;
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: rgba(21,30,38,1);
+}
+
+/**********
+    NAV
+**********/
+
+.menu {
+    font-weight: 700;
+    margin: 0%;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.menu li {
+    color: #29102E;
+    background-color: rgba(145,141,158,1);
+    display: inline-block;
+    margin: 0% auto;
+    position: relative;
+    padding: 15px 4%;
+    border: 1px solid #9d9fa2;
+    box-shadow: 2px 2px 10px 0 rgba(0,0,0,.5);
+    border-radius: 6px; 
+    cursor: pointer;
+    transition-property: background;
+    transition-duration: .2s;
+    transition-delay: 0s;
+    transition-timing-function: ease-in-out;
+}
+
+.menu li:hover {
+    color: #001A2F;
+    background: linear-gradient(rgba(145,141,158,.5), rgba(253,245,209,.3))
+}
+
+footer, 
+nav {
+    display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    line-height: 50px;
+    font-weight: 900;
+    font-size: 30px;
+    font-variant: small-caps;
+    text-align: center;
+    letter-spacing: 1pt;
+    color: rgba(145,141,158,1);
+    text-shadow: 3px 2px 20px rgba(253,245,209,.5);
+}
+
+p {
+    font-weight: 300;
+    line-height: 30px;
+    padding-bottom: 15px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+section {
+    padding-top: 50px;
+    margin-top: 50px;
+}
+
+.navbar {
+    height: 105px;
+    max-height: 340px;
+    display: block;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.clearfix:after,
+.container:after,
+.navbar:after {
+    clear: both;
+    display: table;
+    content: " ";
+}
+
+.wrap {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+.menu-container {
+    max-height: 340px;
+    margin: 0% auto;
+    content: " ";
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+/***********
+    HOME
+************/
+#home {
+    background: url(../assets/thumbnails/life-in-space.jpg);
+    opacity: 1;
+    background-attachment: fixed;
+    -webkit-background-size: fixed;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    display: block;
+    height: auto;
+    padding-top: 350px; /*spacer before main title logo*/
+    padding-bottom: 300px; /*spacer after main title logo*/
+    color: #fff;
+}
+
+.head-main {
+	text-shadow: 2px 4px 5px rgba(0,0,0,.9);
+	font-variant: small-caps;
+	color: rgba(216,218,255,.7);
+	letter-spacing: 3pt;
+	word-spacing: 10pt;
+	font-size: 4em;
+	text-align: left;
+	line-height: 2;
+	font-weight: 900;
+	border: 5px double rgba(216,218,255,.5); /*This looks bad when the lines break, but I can't figure out a good alternative*/
+	padding: 10px;
+}
+
+
+#header {
+    background-color: rgba(100,65,0,.3);
+}
+/**************
+    CONTACT
+***************/
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 0px auto;
+    background: linear-gradient(rgb(145,141,158), rgb(253,245,209));
+}
+
+.RSVP {
+    width: 80%;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 0px auto;
+    box-shadow: -1px -1px 1px 0 rgba(61,53,59,1), 1px 2px 10px 0 rgba(145,141,158,.5);
+}
+
+.RSVP H2,
+.RSVP H3 {
+    color: rgba(77,42,79,1);
+    text-align: center;
+}
+
+.RSVP p {
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    color: #29102e;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    line-height: 1.25;
+}
+
+.RSVP input[type="text"] {
+    font-size: 12px;
+    outline: none;
+    font-weight: 700;
+    color: #001A2F; 
+    padding: 2% 1% 2% 7%;
+    width: 80%;
+    border-top: 1px solid #090b0d;
+    border-right: 2px solid #424549;
+    border-bottom: 2px solid #424549;
+    border-left: 1px solid #090b0d;
+    margin: 10px 1em;
+    border-radius: 7px;
+    background: rgba(253,238,167,.0);
+    box-shadow: inset 0px 3px 5px rgba(145,141,158,.7);
+}
+
+.RSVP input[type="text"]:hover {
+    box-shadow: 0 0 18px rgba(145,141,158,.5);
+}
+
+.form-spacer {
+    padding: 10px 10px;
+}
+
+.terms {
+    margin: 30px 1px 0 0;
+    padding-left: 52px;
+    font-size: 14px;
+    line-height: 5px;
+    color: #29102e;
+    cursor: pointer;
+    font-weight: 600;
+    position: relative;
+    float: right;
+}
+
+.terms:hover {
+    color: #112F3B;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+.submit input[type="submit"] {
+    color: rgba(77,42,79,1);
+    cursor: pointer;
+    border: none;
+    font-weight: 700;
+    outline: none;
+    text-align: center;
+    margin: 0px 3%;
+    padding: 7px 0px;
+    width: 25%;
+    font-size: 18px;
+    transition: border-color 0.3s color 0.3s background-color 0.3s;
+    border-radius: 7px;
+    background-color: #918D9E;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.3);
+}
+
+.submit input[type="submit"]:hover {
+    color: #001A2F;
+    background-color: #B3A7B3;
+    box-shadow: inset 1px 2px 15px 0 rgba(0,0,0,.2);
+}
+
+/*************
+    FOOTER
+**************/
+#footer {
+    background-color:rgba(253,245,209,1);
+    color: #000;
+    text-shadow: 2px 2px 8px 0 rgba(0,0,0,.4);
+    padding: 20px 50px 20px 50px;
+    text-align: right;
+}
